@@ -17,16 +17,16 @@
 	<body>
 		<a href="#principal" class="visually-hidden">Aller au contenu principal</a>
 
-
 		<!-- le contenu dans les li est temporaire c'est juste
 		 pour faire des teste et pour voir ca donne quoi-->
 
-
-		<header class="container">
-			<nav class="inline" aria-labelledby="menu-primaire">
+		<header class="container position-relative my-5" id="haut_page">
+			<nav class="navbar navbar-expand-xl fixed-top d-flex"
+				aria-labelledby="menu-primaire">
 				<h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
 				<div class="container">
-					<a href="#"><img src="img_a_travailler/imageedit_1_4192637725_1.png"
+					<a href="index.html"><img
+							src="img_a_travailler/imageedit_1_4192637725_1.png"
 							alt="Gogo_Food">
 						<hgroup>
 							<h1 class="visually-hidden">Gogo_Food</h1>
@@ -34,16 +34,48 @@
 								nourritures</p>
 						</hgroup>
 					</a>
-					<ul class="dropdown-menu dropdown-menu-dark">
-						<li><a class href="#fruits">Fruits</a></li>
-						<li><a class href="#laitier">Laitier</a></li>
-						<li><a class href="#Viande">Viande</a></li>
-					</ul>
+					<button class="navbar-toggler collapsed navbar-dark bg-black" type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#liens-barre-nav-principale"
+						aria-controls="liens-barre-nav-principale"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- tu met dropdown et tu choisi la couleurs
+					 je t'ai fais un resumer sur teams -->
+
+					<div id="liens-barre-nav-principale"
+						class="navbar-collapse collapse navbar-dark text-bg-dark ">
+						<ul class="align-items-center navbar-nav flex-grow-1 d-flex justify-content-around">
+							<li class="nav-link dropdown">
+								<a class="nav-link" href="#">Fruits</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">Laitier</a>
+							</li>
+							<li><a class="nav-link" href="html/page_2.html">Page 2</a></li>
+							<li><a class="nav-link" href="html/formulaire.html">formulaire</a></li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</header>
-		<main id="principal fs-4" class="container">
+		<main id="principal" class="container ">
+			<section class="">
+				<h2>Qui sommes-nous ?</h2>
+				<hr>
+				<p>Nous sommes <strong> Gogo_Food </strong>.</p>
 
+			</section>
+
+			<section>
+				<h2>gogo</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+					repudiandae sapiente, delectus nisi provident non labore officia
+					necessitatibus explicabo eaque totam neque! Obcaecati consectetur explicabo
+					neque, ducimus nulla quod aliquam.</p>
+			</section>
 		</main>
 		<footer class=" container">
 
@@ -51,34 +83,35 @@
 			 pour faire des teste et pour voir ca donne quoi-->
 
 			<nav class="navbar" aria-labelledby="menu-secondaire">
-				<h2 id="menu-secondaire" class="visually-hidden">Menu s	econdaire</h2>
+				<h2 id="menu-secondaire" class="visually-hidden">Menu econdaire</h2>
 				<div class="container navbar-dark">
-					<ul class=" navbar-nav me-auto fs-6 ">
+					<ul class=" navbar-nav me-auto ">
 
 						<!-- bg = background je te le met noir pour que t'aille un visuelle les trucs sont ou-->
 						<li class="nav-item text-bg-dark">
 
-						<!-- ils sont la mais ils sont en blanc je te laisse gerer le designe apres-->
+							<!-- ils sont la mais ils sont en blanc je te laisse gerer le designe apres-->
 							<a href="#" class="nav-link text-bg-dark">nous Joindre</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link text-bg-dark">support us</a>
 						</li>
 						<li>
-						<a href="#" class="nav-link text-bg-dark">teste</a>
+							<a href="#" class="nav-link text-bg-dark">teste</a>
 						</li>
 					</ul>
 					<!-- a toi de voir pour le designe -->
-					<p class="fs-5 text-dark"><span id="Gogo_Food">Gogo</span>_Food George Gavrailov et Ulric  Copyright© 2023</p>
+					<p class="text-dark"><span id="Gogo_Food">Gogo</span>_Food George
+						Gavrailov et Ulric Copyright© 2023</p>
 				</div>
-				<button class="btn btn-info ">Retour en haut de la page</button>
+				<a href="#haut_page"><button class="btn btn-info">Retour en haut de la page</button></a>
 			</nav>
-			
-			</footer>
-			<script
-				src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-				integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-				crossorigin="anonymous"></script>
 
-		</body>
-	</html>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"></script>
+
+	</body>
+</html>
