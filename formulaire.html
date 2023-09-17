@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Gogo_Food</title>
+        <meta name="Gogo_Food"
+            content="Un site qui presente diffentes types de nourritures">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.min (1).css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <!-- <link rel="icon" href="img/favicon.png"> -->
+    </head>
+    <body class="bg-light">
+        <a href="#principal" class="visually-hidden">Aller au contenu principal</a>
+
+        <!-- le contenu dans les li est temporaire c'est juste
+		 pour faire des teste et pour voir ca donne quoi-->
+
+        <header class="position-relative bg-primary d-flex" id="haut_page">
+
+            <h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
+            <a href="index.html"><img
+                    src="img/imageedit_1_4192637725_1.png"
+                    alt="Gogo_Food" class="img-fluid">
+                <hgroup>
+                    <h1 class="visually-hidden">Gogo_Food</h1>
+                    <p class="visually-hidden">Un site qui presente
+                        diffentes types de
+                        nourritures</p>
+                </hgroup>
+            </a>
+            <nav
+                class="navbar navbar-expand-xl fixed-top p-0 d-flex justify-content-center"
+                aria-labelledby="menu-primaire">
+
+
+                <!-- tu met dropdown et tu choisi la couleurs
+					 je t'ai fais un resumer sur teams -->
+
+                <div id="liens-barre-nav-principale"
+                    class="navbar-dark  d-md-inline ">
+                    <ul class="align-items-center navbar-nav flex-grow-1">
+                        <li class="nav-link">
+                            <a class="nav-link" href="#">Different type de
+                                nourritures</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Des Steak</a>
+                        </li>
+                        <li><a class="nav-link" href="page_2.html">Page 2</a></li>
+                        <li><a class="nav-link" href="index.html">acceuil</a></li>
+                    </ul>
+                </div>
+                <button
+                    class="navbar-toggler collapsed navbar-dark d-sm-block d-md-none bg-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#liens-barre-nav-principale"
+                    aria-controls="liens-barre-nav-principale"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
+        <main id="principal" class="container ">
+            <form action="#" class="row" method="post">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="txtPrenom">Prenom* :</label>
+                        <input class="form-control bg-dark" placeholder="Prenom" type="text" name="txtPrenom" id="txtPrenom" required>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label" for="txtNom">Nom* :</label>
+                        <input class="form-control bg-dark" type="text" name="txtNom" id="txtNom" placeholder="Nom" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="txtCourriel" class="form-label">Courriel* :</label>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark" placeholder="votre.courriel@gmail.com" name="txtCourriel" id="txtCourriel" aria-describedby="span_courriel" required>
+                            <div class="input-group-prepend">  
+                                <span class="input-group-text" id="span_courriel">exemple@gmail.com</span>
+                            </div>  
+                            
+                    </div>
+
+                    </div>
+                    <div class="col-6">
+                        <label for="txt"></label>
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </main>
+        <footer class="container">
+
+            <!-- le contenu dans les li est temporaire c'est juste
+			 pour faire des teste et pour voir ca donne quoi-->
+
+            <nav class="navbar" aria-labelledby="menu-secondaire">
+                <h2 id="menu-secondaire" class="visually-hidden">Menu econdaire</h2>
+                <div class="container navbar-dar text-secondary">
+                    <ul class=" navbar-nav">
+
+                        <li class="nav-link">
+
+                            <a href="#" class="nav-link">nous Joindre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">nous supporter</a>
+                        </li>
+                    </ul>
+                    <!-- a toi de voir pour le designe -->
+                    <p class="text-dark"><span id="Gogo_Food">Gogo</span>_Food
+                        George
+                        Gavrailov et Ulric Copyright© 2023</p>
+                </div>
+            </nav>
+            <div class="fixed-bottom d-flex justify-content-end">
+                <a href="#haut_page"><button class="btn btn-warning">Retour en
+                        haut de la page</button></a>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
