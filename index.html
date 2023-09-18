@@ -1,180 +1,126 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
-	<head>
-		<meta charset="utf-8">
-		<title>Gogo_Food</title>
-		<meta name="Gogo_Food"
-			content="Un site qui presente diffentes types de nourritures">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/bootstrap.min (1).css">
-		<link rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-		<!-- <link rel="icon" href="img/favicon.png"> -->
-	</head>
-	<body>
-		<a href="#principal" class="visually-hidden">Aller au contenu principal</a>
+<head>
+	<meta charset="utf-8">
+	<title>Gogo_Food</title>
+	<meta name="Gogo_Food" content="Un site qui presente diffentes types de nourritures">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min (1).css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+</head>
 
-		<!-- le contenu dans les li est temporaire c'est juste
-		 pour faire des teste et pour voir ca donne quoi-->
-
-		<header class="position-relative bg-primary" id="haut_page">
-			<nav class="navbar navbar-expand-xl fixed-top p-0 d-flex justify-content-center"
-				aria-labelledby="menu-primaire">
-
-
-
-					<h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
-						<a href="index.html"><img
-							src="img/imageedit_1_4192637725_1.png"
-							alt="Gogo_Food" class="img-fluid">
-						<hgroup>
-							<h1 class="visually-hidden">Gogo_Food</h1>
-							<p class="visually-hidden">Un site qui presente diffentes types de
-								nourritures</p>
-						</hgroup>
-					</a>
-							
-					<h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
-
-					
-
-					<!-- tu met dropdown et tu choisi la couleurs
-					 je t'ai fais un resumer sur teams -->
-
-					<div id="liens-barre-nav-principale" class="navbar-dark  d-md-inline ">
-						<ul class="align-items-center navbar-nav flex-grow-1">
-							<li class="nav-link">
-								<a class="nav-link" href="#">Different type de nourritures</a>
-							</li>
-							<li>
-								<a class="nav-link" href="#">Des Steak</a>
-							</li>
-							<li><a class="nav-link" href="page_2.html">Page 2</a></li>
-							<li><a class="nav-link" href="formulaire.html">formulaire</a></li>
-						</ul>
-					</div>
-					<button class="navbar-toggler collapsed navbar-dark d-sm-block d-md-none bg-dark"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#liens-barre-nav-principale"
-						aria-controls="liens-barre-nav-principale"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-	 			</nav>
-		</header>
-		<main id="principal">
-
-			<div id="carousel" class="carousel slide carousel-fade"
-				data-bs-ride="carousel">
-				<div class="carousel-indicators">
-
-					<!-- le premier btn = 0 (comme un vecteur).
-					 C'est ton indicateur ou tu vois t'es rendu au quel carousel sur combien -->
-
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
-						class="active" aria-current="true"
-						aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
-						aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
-						aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
-						aria-label="Slide 4"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-
-						<!-- l'image doit etre redimensionner pour que
-							 sa soit 1376 *1376 pour tout les iamge -->
-
-						<img src="img/foodiesfeed.com_burger-with-french-fries-aerial.jpg"
-							class="d-block w-100 h-25" alt="image carousel 1">
-						<div class="carousel-caption d-none d-md-block">
-							<h4 class="fw-bold text-light">cheesseBurger</h4>
-							<p>C'est un cheesseBurger acompagner de frites et de ognon.</p>
-						</div>
-					</div>
-					<div class="carousel-item"> 
-			
-
-						<img src="img/foodiesfeed.com_steak-with-french-fries-on-a-plate.jpg" class="d-block w-100" alt="image carousel 2">
-						<div class="carousel-caption d-none d-md-block">
-							<h4 class="fw-bold text-light">Steak</h4>
-							<p>Steak assaisonner acompagner de frites.</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-
-						<img src="img/foodiesfeed.com_pouring-honey-on-pancakes.jpg" class="d-block w-100 " alt="image carousel 3">
-						<div class="carousel-caption d-none d-md-block">
-							<h4 class="fw-bold text-light">Crepes au miel</h4>
-							<p>Ce desert/dejeuner est a base de crepe, du miel et des fruit de cote(optionel).</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<!--  img/foodiesfeed.com_cheeseburger.jpg
-						 -->
-						<img src="img/foodiesfeed.com_ice-cream-cone-splash (1).jpg" class="d-block w-100" alt="image carousel 4">
-						<div class="carousel-caption d-none d-md-block">
-							<h4 class="fw-bold text-light">Creme glace</h4>
-							<p>Une belle creme glacer a la vannille a compagner de fruits et de siro de serise.</p> <!-- jsp c'est quoi le siro ;) -->
-						</div>
-					</div>
-				</div>
-
-				<!-- les boutons pour changer de page de carousel-->
-
-				<button class="carousel-control-prev" type="button"
-					data-bs-target="#carousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Précédent</span>
-				</button>
-				<button class="carousel-control-next" type="button"
-					data-bs-target="#carousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Suivant</span>
-				</button>
+<body>
+	<a href="#principal" class="visually-hidden">Aller au menu principal</a>
+	<!-- le contenu dans les li est temporaire c'est juste pour faire des teste et pour voir ca donne quoi-->
+	<header class="position-relative bg-primary" id="haut_page">
+		<nav class="navbar navbar-expand-xl fixed-top p-0 d-flex justify-content-center" aria-labelledby="menu-primaire">
+			<h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
+			<a href="index.html">
+				<img width="100" height="80" src="img/imageedit_1_4192637725_1.png" alt="Gogo_Food" class="img-fluid">
+				<hgroup>
+					<h1 class="visually-hidden">Gogo_Food</h1>
+					<p class="visually-hidden">Un site qui presente diffentes types de nourritures</p>
+				</hgroup>
+			</a>
+			<h2 id="menu-primaire" class="visually-hidden">Menu principal</h2>
+			<!-- tu met dropdown et tu choisi la couleurs je t'ai fais un resumer sur teams -->
+			<div id="liens-barre-nav-principale" class="navbar-dark  d-md-inline ">
+				<ul class="align-items-center navbar-nav flex-grow-1">
+					<li><a class="nav-link" href="#">Differents types de nourriture</a></li>
+					<li><a class="nav-link" href="#">Des Steak</a></li>
+					<li><a class="nav-link" href="page_2.html">Page 2</a></li>
+					<li><a class="nav-link" href="formulaire.html">Formulaire</a></li>
+				</ul>
 			</div>
-
-		</main>
-		<footer class="container">
-
-			<!-- le contenu dans les li est temporaire c'est juste
-			 pour faire des teste et pour voir ca donne quoi-->
-
-			<nav class="navbar" aria-labelledby="menu-secondaire">
-				<h2 id="menu-secondaire" class="visually-hidden">Menu econdaire</h2>
-				<div class="container navbar-dar text-secondary">
-					<ul class=" navbar-nav">
-
-						<li class="nav-link">
-
-							<a href="#" class="nav-link">nous Joindre</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">nous supporter</a>
-						</li>
-						<li>
-							<a href="formulaire.html" class="nav-link"><strong> Nous Joindre</strong></a>
-						</li>
-					</ul>
-					<!-- a toi de voir pour le designe -->
-					<p class="text-dark"><span id="Gogo_Food">Gogo</span>_Food George
-						Gavrailov et Ulric Copyright© 2023</p>
-				</div>
-			</nav>
-			<div class="fixed-bottom d-flex justify-content-end">
-				<a href="#haut_page"><button class="btn btn-warning">Retour en
-						haut de la page</button></a>
+			<button class="navbar-toggler collapsed navbar-dark d-sm-block d-md-none bg-dark" type="button"
+				data-bs-toggle="collapse" data-bs-target="#liens-barre-nav-principale"
+				aria-controls="liens-barre-nav-principale" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+	</header>
+	<main id="principal">
+		<div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<!-- le premier btn = 0 (comme un vecteur). C'est ton indicateur ou tu vois t'es rendu au quel carousel sur combien -->
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+					aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 			</div>
-		</footer>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-			crossorigin="anonymous"></script>
-	</body>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<!-- l'image doit etre redimensionner pour que sa soit 1376 *1376 pour toutes les images -->
+					<img src="img/foodiesfeed.com_burger-with-french-fries-aerial.jpg" class="d-block w-100 h-25" alt="image carousel 1">
+					<div class="carousel-caption d-none d-md-block">
+						<h4 class="fw-bold text-light">Hamburger au fromage</h4>
+						<p>Hamburger au fromage acompagner de frites et d'oignon.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/foodiesfeed.com_steak-with-french-fries-on-a-plate.jpg" class="d-block w-100"
+						alt="image carousel 2">
+					<div class="carousel-caption d-none d-md-block">
+						<h4 class="fw-bold text-light">Steak</h4>
+						<p>Steak assaisonner acompagner de frites.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/foodiesfeed.com_pouring-honey-on-pancakes.jpg" class="d-block w-100"
+						alt="image carousel 3">
+					<div class="carousel-caption d-none d-md-block">
+						<h4 class="fw-bold text-light">Crèpes au miel</h4>
+						<p>Ce desert/dejeuner est a base de crepe, du miel et des fruit de cote(optionel).</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<!-- img/foodiesfeed.com_cheeseburger.jpg -->
+					<img src="img/foodiesfeed.com_ice-cream-cone-splash (1).jpg" class="d-block w-100"
+						alt="image carousel 4">
+					<div class="carousel-caption d-none d-md-block">
+						<h4 class="fw-bold text-light">Crème glace</h4>
+						<p>Une belle creme glacer a la vannille a compagner de fruits et de siro de cerise.</p>
+					</div>
+				</div>
+			</div>
+			<!-- les boutons pour changer de page de carousel-->
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Précédent</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Suivant</span>
+			</button>
+		</div>
+	</main>
+	<footer class="container">
+		<!-- le contenu dans les li est temporaire c'est juste pour faire des teste et pour voir ca donne quoi-->
+		<nav class="navbar" aria-labelledby="menu-secondaire">
+			<h2 id="menu-secondaire" class="visually-hidden">Menu secondaire</h2>
+			<div class="container text-secondary">
+				<ul class=" navbar-nav">
+					<li><a href="#" class="nav-link">Nous Joindre</a></li>
+					<li><a href="#" class="nav-link">Nous supporter</a></li>
+					<li><a href="#" class="nav-link">Nous Joindre</a></li>
+				</ul>
+				<!-- a toi de voir pour le designe -->
+				<p class="text-dark">Gogo_Food George Gavrailov et Ulric Copyright© 2023</p>
+			</div>
+		</nav>
+		<div class="fixed-bottom d-flex justify-content-end">
+			<a href="#haut_page">
+				<button class="btn btn-warning">Retour en haut de la page</button>
+			</a>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
