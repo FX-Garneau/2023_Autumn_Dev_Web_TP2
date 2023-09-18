@@ -7,13 +7,13 @@
 	<meta name="Gogo_Food" content="Un site qui presente diffentes types de nourritures">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/bootstrap.min (1).css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<!-- <link rel="icon" href="img/favicon.png"> -->
 </head>
 
-<body>
-	<a href="#principal" class="visually-hidden">Aller au contenu principal</a>
+<body class="page-accueil">
+	<a href="#principal" class="visually-hidden">Aller au menu principal</a>
 	<!-- le contenu dans les li est temporaire c'est juste pour faire des teste et pour voir ca donne quoi-->
 	<header class="position-relative bg-primary" id="haut_page">
 		<nav class="navbar navbar-expand-xl fixed-top p-0 d-flex justify-content-center" aria-labelledby="menu-primaire">
@@ -25,14 +25,14 @@
 					<p class="visually-hidden">Un site qui presente diffentes types de nourritures</p>
 				</hgroup>
 			</a>
-			<h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
+			<h2 id="menu-primaire" class="visually-hidden">Menu principal</h2>
 			<!-- tu met dropdown et tu choisi la couleurs je t'ai fais un resumer sur teams -->
-			<div id="liens-barre-nav-principale" class="navbar-dark  d-md-inline ">
+			<div id="liens-barre-nav-principale" class="navbar-dark">
 				<ul class="align-items-center navbar-nav flex-grow-1">
-					<li><a class="nav-link" href="#">Different type de nourritures</a></li>
+					<li><a class="nav-link" href="#">Differents types de nourriture</a></li>
 					<li><a class="nav-link" href="#">Des Steak</a></li>
 					<li><a class="nav-link" href="page_2.html">Page 2</a></li>
-					<li><a class="nav-link" href="formulaire.html">formulaire</a></li>
+					<li><a class="nav-link" href="formulaire.html">Formulaire</a></li>
 				</ul>
 			</div>
 			<button class="navbar-toggler collapsed navbar-dark d-sm-block d-md-none bg-dark" type="button"
@@ -55,11 +55,10 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<!-- l'image doit etre redimensionner pour que sa soit 1376 *1376 pour toutes les images -->
-					<img src="img/foodiesfeed.com_burger-with-french-fries-aerial.jpg" class="d-block w-100 h-25"
-						alt="image carousel 1">
-					<div class="carousel-caption d-none d-md-block">
-						<h4 class="fw-bold text-light">cheesseBurger</h4>
-						<p>C'est un cheesseBurger acompagner de frites et de ognon.</p>
+					<img src="img/foodiesfeed.com_burger-with-french-fries-aerial.jpg" class="d-block w-100 h-25" alt="image carousel 1">
+					<div class="carousel-caption d-md-block">
+						<h4 class="fw-bold text-light">Hamburger au fromage</h4>
+						<p>Hamburger au fromage acompagner de frites et d'oignon.</p>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -74,7 +73,7 @@
 					<img src="img/foodiesfeed.com_pouring-honey-on-pancakes.jpg" class="d-block w-100"
 						alt="image carousel 3">
 					<div class="carousel-caption d-none d-md-block">
-						<h4 class="fw-bold text-light">Crepes au miel</h4>
+						<h4 class="fw-bold text-light">Crèpes au miel</h4>
 						<p>Ce desert/dejeuner est a base de crepe, du miel et des fruit de cote(optionel).</p>
 					</div>
 				</div>
@@ -83,7 +82,7 @@
 					<img src="img/foodiesfeed.com_ice-cream-cone-splash (1).jpg" class="d-block w-100"
 						alt="image carousel 4">
 					<div class="carousel-caption d-none d-md-block">
-						<h4 class="fw-bold text-light">Creme glace</h4>
+						<h4 class="fw-bold text-light">Crème glace</h4>
 						<p>Une belle creme glacer a la vannille a compagner de fruits et de siro de cerise.</p>
 					</div>
 				</div>
@@ -102,21 +101,15 @@
 	<footer class="container">
 		<!-- le contenu dans les li est temporaire c'est juste pour faire des teste et pour voir ca donne quoi-->
 		<nav class="navbar" aria-labelledby="menu-secondaire">
-			<h2 id="menu-secondaire" class="visually-hidden">Menu econdaire</h2>
-			<div class="container navbar-dar text-secondary">
+			<h2 id="menu-secondaire" class="visually-hidden">Menu secondaire</h2>
+			<div class="container text-secondary">
 				<ul class=" navbar-nav">
-					<li class="nav-link">
-						<a href="#" class="nav-link">nous Joindre</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">nous supporter</a>
-					</li>
-					<li>
-						<a href="formulaire.html" class="nav-link"><strong> Nous Joindre</strong></a>
-					</li>
+					<li><a href="#" class="nav-link">Nous Joindre</a></li>
+					<li><a href="#" class="nav-link">Nous supporter</a></li>
+					<li><a href="#" class="nav-link">Nous Joindre</a></li>
 				</ul>
 				<!-- a toi de voir pour le designe -->
-				<p class="text-dark"><span id="Gogo_Food">Gogo</span>_Food GeorgeGavrailov et Ulric Copyright© 2023</p>
+				<p class="text-dark">Gogo_Food George Gavrailov et Ulric Copyright© 2023</p>
 			</div>
 		</nav>
 		<div class="fixed-bottom d-flex justify-content-end">
