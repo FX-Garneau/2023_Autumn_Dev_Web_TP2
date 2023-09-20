@@ -16,7 +16,7 @@
 	<a href="#principal" class="visually-hidden">Aller au menu principal</a>
 	<!-- le contenu dans les li est temporaire c'est juste pour faire des teste et pour voir ca donne quoi-->
 	<header class="position-relative bg-primary" id="haut_page">
-		<nav class="navbar navbar-expand-xl fixed-top p-0 d-flex justify-content-center bg-primary" aria-labelledby="menu-primaire">
+		<nav class="navbar navbar-expand fixed-top p-0 d-flex justify-content-center bg-primary" aria-labelledby="menu-primaire">
 			<h2 id="menu-primaire" class="visually-hidden">Menu primaire</h2>
 			<a href="index.html">
 				<img width="100" height="80" src="img/imageedit_1_4192637725_1.png" alt="Gogo_Food" class="img-fluid">
@@ -29,48 +29,30 @@
 			<!-- tu met dropdown et tu choisi la couleurs je t'ai fais un resumer sur teams -->
 			<div id="liens-barre-nav-principale" class="navbar-dark">
 				<ul class="align-items-center navbar-nav flex-grow-1">
-					<li><a class="nav-link" href="#">Differents types de nourriture</a></li>
-					<li><a class="nav-link" href="#">Des Steak</a></li>
+					<li><a class="nav-link" href="#">Les plus populaires</a></li>
+					<li><a class="nav-link" href="#">Steak</a></li>
 					<li><a class="nav-link" href="page_2.html">Page 2</a></li>
 					<li><a class="nav-link" href="formulaire.html">Formulaire</a></li>
 				</ul>
 			</div>
-			<button class="navbar-toggler collapsed navbar-dark d-sm-block d-md-none bg-dark" type="button"
+			<button class="navbar-toggler collapsed d-sm-block d-md-none" type="button"
 				data-bs-toggle="collapse" data-bs-target="#liens-barre-nav-principale"
 				aria-controls="liens-barre-nav-principale" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		</nav>
 	</header>
-	<main id="principal">
-		<form action="#" method="post">
-			<div class="row">
-				<fieldset class="col">
+	<main id="principal" class="container d-flex flex-column justify-content-evenly align-items-center">
+		<form action="#" method="post" class="row">
+				<fieldset class="form-group col-12">
 					<legend>Informations personnelles</legend>
-					<input class="" type="text" required>
-					<!-- <div class="col-6">
-						<label class="form-label" for="txtPrenom">Prenom* :</label>
-						<input class="form-control bg-dark" placeholder="Prenom" type="text" name="txtPrenom" id="txtPrenom" required>
-					</div>
-					<div class="col-6">
-						<label class="form-label" for="txtNom">Nom* :</label>
-						<input class="form-control bg-dark" type="text" name="txtNom" id="txtNom" placeholder="Nom" required>
-					</div>
-					<div class="col-6">
-						<label for="txtCourriel" class="form-label">Courriel* :</label>
-						<div class="input-group">
-							<input type="text" class="form-control bg-dark" placeholder="votre.courriel@gmail.com"
-								name="txtCourriel" id="txtCourriel" aria-describedby="span_courriel" required>
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="span_courriel">exemple@gmail.com</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-6">
-						<label for="txt"></label>
-					</div> -->
+					<label for="nom" class="form-inline">Nom:</label>
+					<input type="text" name="nom" id="nom" class="form-control">
 				</fieldset>
-			</div>
+				<fieldset class="col-12">
+					<legend>Partie 2</legend>
+					<input type="text" name="nom" id="nom" class="form-control">
+				</fieldset>
 		</form>
 	</main>
 	<footer class="container">
