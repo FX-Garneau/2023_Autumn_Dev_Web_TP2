@@ -1,18 +1,4 @@
-body.page-formulaire > header,
-header > nav {
-    height: 5.25rem;
-}
+/*** Importation de Boostrap **/
+@import "./bootstrap";
 
-main {
-    min-height: calc(100vh - 5.25rem - 11.25rem);
-}
-
-footer {
-    height: 11.25rem;
-}
-
-#carousel,
-.carousel-inner
-{
-    height: 100vh;
-}
+/*** Début des styles personnalisés ***/
