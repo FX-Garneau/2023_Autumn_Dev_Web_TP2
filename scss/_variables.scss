@@ -297,15 +297,25 @@ $cyans: (
 ) !default;
 // fusv-enable
 
+// theme de bootstrap
+$primary-color:#b58900;
+$secondary-color:#839496;
+$success-color:#2aa198;
+$info-color:#268bd2;
+$warning-color:#cb4b16 ;
+$danger-color: #d33682 ;
+$light-color:#fdf6e3;
+$dark-color:#073642;
+
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary:       $primary-color;
+$secondary:     $secondary-color;
+$success:       $success-color;
+$info:          $info-color;
+$warning:       $warning-color;
+$danger:        $danger-color;
+$light:         $light-color;
+$dark:          $dark-color;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
