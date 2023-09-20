@@ -2,21 +2,36 @@
 @import "./bootstrap";
 
 /*** Début des styles personnalisés ***/
+
+/* Global */
+img {
+    object-fit: cover;
+}
+
+/* Header */
 body.page-formulaire > header,
 header > nav {
     height: 5.25rem;
 }
 
+/* Main */
 main {
     min-height: calc(100vh - 5.25rem - 11.25rem);
 }
 
+/* Footer */
 footer {
     height: 11.25rem;
 }
 
+/* Accueil */
 #carousel,
-.carousel-inner
-{
+.carousel-inner {
     height: 100vh;
+}
+
+#carousel .carousel-item, 
+#carousel img {
+    width: 100%;
+    height: 100%;
 }
