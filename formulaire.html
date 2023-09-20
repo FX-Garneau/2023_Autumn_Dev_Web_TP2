@@ -7,7 +7,7 @@
 	<meta name="Gogo_Food" content="Un site qui presente diffentes types de nourritures">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="scss/boo">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<link rel="apple-touch-icon"sizes="180x180"href="favion/apple-touch-icon.png">
 	<link rel="icon"type="image/png"sizes="32x32"href="favion/favicon-32x32.png">
@@ -55,6 +55,24 @@
 					<legend>Informations personnelles</legend>
 					<label for="nom" class="form-inline">Nom:</label>
 					<input type="text" name="nom" id="nom" class="form-control">
+					<div class="mt-3">
+					<label for="prenom" class="form-check-inline">Prenom :</label>
+					<input type="text" class="form-control" name="prenom" id="prenom">
+					</div>
+					<div class="mt-3s">
+					<label for="email">votre courriel:</label>
+					<div class="input-group">
+						<div class="input-group-prenend">
+						<input type="email" name="email" id="email" class="form-control" placeholder="Exemple@gmail.com" aria-describedby="email_Group">
+						</div>
+						<span class="input-group-text" id="email_Group">Exemple@gmail.com</span>
+					</div>
+					</div>
+					<label for="age" class="form-check-inline mt-3">Votre age:</label>
+					<input type="number" name="age" id="age" placeholder="0" class="form-control">
+
+					<label for="adress"></label>
+
 				</fieldset>
 				<fieldset class="col-12">
 					<legend>Partie 2</legend>
