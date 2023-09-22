@@ -35,3 +35,16 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+/* Formulaire */
+.page-formulaire {
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder {
+        color: darkgrey;
+    }
+    textarea {
+        resize: none;
+        height: 5.65em;
+    }
+}

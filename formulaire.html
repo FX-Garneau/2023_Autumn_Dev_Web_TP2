@@ -45,20 +45,45 @@
 			</nav>
 		</header>
 		<main id="principal" class="container d-flex flex-column justify-content-evenly align-items-center">
-			<form action="#" method="post" class="row w-100">
+			<h2>Soumettre une nouvelle recette</h2>
+			<form action="#" method="post" class="row w-100 justify-content-center">
 				<fieldset class="col-sm-12 col-md-6">
 					<legend>Informations personnelles</legend>
-					<div class="input-group">
-						<label class="input-group-text">Prenom</label>
-						<input type="text" name="prenom" id="prenom" class="form-control">
+					<div class="input-group mb-3">
+						<label for="prenom" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Prenom</label>
+						<input type="text" name="prenom" id="prenom" placeholder="John" class="form-control">
 					</div>
-					<label for="nom" class="form-label">Nom:</label>
-					<input type="text" name="nom" id="nom" class="form-control">
+					<div class="input-group mb-3">
+						<label for="nom" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Nom</label>
+						<input type="text" name="nom" id="nom" placeholder="Doe" class="form-control">
+					</div>
+					<div class="input-group mb-3">
+						<label for="email" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Email</label>
+						<input type="email" name="email" id="email" placeholder="john.doe@gmail.com" class="form-control">
+					</div>
+					<div class="input-group mb-3">
+						<label for="telephone" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Téléphone</label>
+						<input type="tel" name="telephone" id="telephone" placeholder="123-456-7890" class="form-control">
+					</div>
 				</fieldset>
-				<fieldset class="col-12">
-					<legend>Partie 2</legend>
-					<input type="text" name="nom" id="nom" class="form-control">
+				<fieldset class="col-sm-12 col-md-6">
+					<legend>Informations de la recette</legend>
+					<div class="input-group mb-3">
+						<label for="nom-recette" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Nom</label>
+						<input type="text" name="nom-recette" id="nom-recette" placeholder="Le Burger Flamboyant" class="form-control">
+					</div>
+					<div class="input-group mb-3">
+						<label for="etapes-recette" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Étapes</label>
+						<textarea type="textarea" name="etapes-recette" id="etapes-recette" placeholder="1. Deux tasses de rayons de soleil" class="form-control" rows="3"></textarea>
+					</div>
+					<div class="input-group mb-3">
+						<label for="image" class="input-group-text col-sm-3 col-md-4 col-lg-3 col-xxl-2">Image</label>
+						<input type="file" name="image" id="image" class="form-control">
+					</div>
 				</fieldset>
+				<div class="col-sm-12 col-md-6">
+					<input type="submit" value="Soumettre" id="soumettre" class="form-control bg-info text-light">
+				</div>
 			</form>
 		</main>
 		<footer class="container">
